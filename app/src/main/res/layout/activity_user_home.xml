@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/tvUserWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Single CardView containing all 3 actions -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:radius="12dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Find Bus -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="Find Bus Icon"
+                        android:src="@drawable/find" />
+
+                    <Button
+                        android:background="@drawable/rounded_button"
+                        android:id="@+id/btnFindBus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Find Bus"
+                        android:backgroundTint="#2196F3"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <!-- My Bookings -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="33dp"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="My Bookings Icon"
+                        android:src="@drawable/book" />
+
+                    <Button
+                        android:background="@drawable/rounded_button"
+                        android:id="@+id/btnMyBookings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My Bookings"
+                        android:backgroundTint="#349CBD"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <!-- Logout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="26dp"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="Logout Icon"
+                        android:src="@drawable/loguot" />
+
+                    <Button
+                        android:background="@drawable/rounded_button"
+                        android:id="@+id/btnLogout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Logout"
+                        android:backgroundTint="#1E87A9"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
